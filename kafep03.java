@@ -43,6 +43,9 @@ public class kafep03 {
             case 'l':
             totalharga+=0.4*totalharga;
                 break;
+            default:
+            System.out.println("Size yang dipilih tidak tersria  ");
+            return;
         }
         double diskon = keanggotaan? 0.1:0;
         double nominalBayar= totalharga-(diskon*totalharga);
